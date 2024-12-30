@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>To-Do Companion</h1>
+            <h2>Your Task Manager <img src="images/icon.png" alt="icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <input type="date" id="date-picker">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+            <div class="task-summary">
+                <p><strong>Summary:</strong></p>
+                <p>Completed: <span id="completed-count">0</span></p>
+                <p>Incomplete: <span id="incomplete-count">0</span></p>
+            </div>
+            <div class="controls">
+                <button onclick="clearAllTasks()">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
